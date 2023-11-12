@@ -1,6 +1,7 @@
 /* Estilos generales */
 body {
     font-family: 'fonts/0FlJVP6Hrxmt7-fsUFhlFXNIlpcSwSrkTA-v.woff2'; /*Arial, sans-serif;*/
+    background: linear-gradient(90deg, rgba(30,36,0,1) 0%, rgba(181,6,64,1) 35%, rgba(0,212,255,1) 100%);
     color: #fff;
     margin: 0;
     padding: 0;
