@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es-AR"></html>
+<html>
+<head>
+    <script src="styles.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /*zZZ*/
+    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* TODOS Descripcion Detallada */
+        .descripcion-detallada {
+            display: none;
+        }
+    </style>
+    <style>
+        /* Mis elementos fav XD */
+        .mi-elemento {
+            font-weight: bold;
+            font-size: 15px;
+            color: rgb(66, 66, 66);
+            text-decoration: none;  /* XD */
+            background-color: rgb(0, 0, 0);
+            padding: 12px 15px;
+            margin: 0 auto;
+            border: 0 solid rgb(197, 197, 197);
+            border-top-width: 2px;
+            color: rgb(98, 98, 98);
+            background-color: rgb(0, 0, 0);
+            padding: 20px 10px 20px 20px;
+            margin: 0;
+            border-style: none;
+            border-top: 2px solid #00C5DE;
+            border-bottom: 1px solid rgb(231, 231, 231);
+            min-height: 6px;
+            position: relative;
+            font-weight: normal;
+        }
+    </style>
+    <script src="juego.js"></script>
+</head>
+<body>
+    <header>
+        <h1>LujoLink Studio (alpha beta 0.0.1)</h1>
+        <h1>""</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Foro</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">???</a></li>
+            </ul>
+        </nav>
+        <div class="menu-button" onclick="toggleMenu()"> <!-- 3 rayas menú xd-->
+            <div class="menu-icon">
+                <img src="assets/images/icons/menu_icon.png"/>
+        </div>
+        <div class="home-icon">
+            <img src="assets/images/icons/home_icon.png"/>
+        </div>
+        <div class="share-icon">
+            <img src="assets/images/icons/share_icon.png"/>
+        </div>
+    </header>
+    <!-- Menú oculto -->
+    <nav class="hidden-menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Foro</a></li>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+            <li><a href="#" onclick="cargarJuego()">???</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <h2 class="uix_navigationLogoText2"><i class="uix_icon fa fa-gamepad2"></i>Leeme...</h2> <!-- <h2>¡Leeme porfavor!</h2> -->
+        <!-- Botón para mostrar/ocultar la descripción detallada -->
+        <button onclick="toggleDescripcionWithAnimation()">↴</button> <!-- <button onclick="toggleDescripcion()">ASDAS</button> -->
+        <div class="leeme">
+        <p>asd</p>
+        <p>pito!</p>
+    </main> 
+    <footer>
+        <p>Derechos de autor reservados por nadie | 2023</p>
+    </footer>
+    <script>
+        // Función para mostrar u ocultar la descripción detallada
+        function toggleDescripcion() {
+            var descripcion = document.querySelector('.descripcion-detallada');
+            if (descripcion.style.display === 'none' || descripcion.style.display === '') {
+                descripcion.style.display = 'block';
+            } else {
+                descripcion.style.display = 'none';
+            }
+        }
+        function toggleDescripcion() {
+            var descripcion = document.querySelector('.leeme');
+            if (descripcion.style.display === 'none2' || descripcion.style.display === '') {
+                descripcion.style.display = 'block2';
+            } else {
+                descripcion.style.display = 'none2';
+            }
+        }
+    </script>
+</body>
+</html>
