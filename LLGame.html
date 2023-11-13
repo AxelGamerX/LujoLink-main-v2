@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LujoLink Game!</title>
+    <link rel="stylesheet" href="game-style.css">
+  </head>
+  <body>
+    <h1>Adivina el número</h1>
+    <p>Intenta adivinar un número entre 1 y 100.</p>
+    <input type="number" id="guess" min="1" max="100" />
+    <button onclick="comprobarAdivinanza()">Adivinar</button>
+    <div class="answer">
+      <!-- <p class="incorrect" id="message">Incorrecto! El número es menor!</p> -->
+      <p class="correct" id="message">Correcto! Haz adivinado!</p>
+    </div>
+    <form action="./LujoLink.html">
+      <button>Volver al Menú</button>
+    </form>
+    <script src="juego.js"></script>
+  </body>
+</html>

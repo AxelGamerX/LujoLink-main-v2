@@ -1,131 +1,108 @@
 <!DOCTYPE html>
-<html lang="es-AR">
-
-</html>
+<html lang="es-AR"></html>
 <html>
-
-<head>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <head>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <script src="styles.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <style>
-        /*zZZ*/
-    </style>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <style>
-        /* TODOS Descripcion Detallada */
-        .descripcion-detallada {
-            display: none;
-        }
-    </style>
-    <style>
-        /* Mis elementos fav XD */
-        .mi-elemento {
-            font-weight: bold;
-            font-size: 15px;
-            color: rgb(66, 66, 66);
-            text-decoration: none;
-            /* XD */
-            background-color: rgb(0, 0, 0);
-            padding: 12px 15px;
-            margin: 0 auto;
-            border: 0 solid rgb(197, 197, 197);
-            border-top-width: 2px;
-            color: rgb(98, 98, 98);
-            background-color: rgb(0, 0, 0);
-            padding: 20px 10px 20px 20px;
-            margin: 0;
-            border-style: none;
-            border-top: 2px solid #00C5DE;
-            border-bottom: 1px solid rgb(231, 231, 231);
-            min-height: 6px;
-            position: relative;
-            font-weight: normal;
-        }
+      /* TODOS Descripcion Detallada */
+      .descripcion-detallada {
+        display: none;
+      }
+
+      /* Mis elementos fav XD */
+      .mi-elemento {
+        font-weight: bold;
+        font-size: 15px;
+        color: rgb(66, 66, 66);
+        text-decoration: none;
+        /* XD */
+        background-color: rgb(0, 0, 0);
+        padding: 12px 15px;
+        margin: 0 auto;
+        border: 0 solid rgb(197, 197, 197);
+        border-top-width: 2px;
+        color: rgb(98, 98, 98);
+        background-color: rgb(0, 0, 0);
+        padding: 20px 10px 20px 20px;
+        margin: 0;
+        border-style: none;
+        border-top: 2px solid #00c5de;
+        border-bottom: 1px solid rgb(231, 231, 231);
+        min-height: 6px;
+        position: relative;
+        font-weight: normal;
+      }
     </style>
     <script src="juego.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>LujoLink Studio (alpha beta 0.0.1)</h1>
-        <h1>""</h1>
-        <div class="menu-button" onclick="toggleMenu()"> <!-- menú hamburguesa -->
-            <span id="icon-hx"><i class="bx bx-menu"></i></span>
-        </div>
+      <h1>LujoLink Studio (alpha beta 0.0.1)</h1>
+      <h1>""</h1>
+      <div class="menu-button" onclick="toggleMenu()">
+        <!-- menú hamburguesa -->
+        <span id="icon-hx"><i class="bx bx-menu"></i></span>
+      </div>
     </header>
     <!-- Menú oculto -->
     <nav class="hidden-menu">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Foro</a></li>
-            <li><a href="#">Ayuda</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Términos y Condiciones</a></li>
-            <li><a href="#" onclick="cargarJuego()">???</a></li>
-
-        </ul>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Foro</a></li>
+        <li><a href="#">Ayuda</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Términos y Condiciones</a></li>
+        <!-- <li><a onclick="cargarJuego()">???</a></li> -->
+        <li><a href="./LLGame.html" >???</a></li>
+      </ul>
     </nav>
     <main>
-        <h2 class="uix_navigationLogoText2"><i class="uix_icon fa fa-gamepad2"></i>Leeme...</h2>
-        <!-- <h2>¡Leeme porfavor!</h2> -->
-        <!-- Botón para mostrar/ocultar la descripción detallada -->
-        <button onclick="toggleDescripcionWithAnimation()"><span id="chevron-arrow"><i
-                    class='bx bx-chevron-down'></i></span></button>
-        <!-- <button onclick="toggleDescripcion()">ASDAS</button> -->
-        <div class="leeme">
-            <p>Abre el icono de la hamburguesa!</p>
-        </div>
+      <h2 class="uix_navigationLogoText2">
+        <i class="uix_icon fa fa-gamepad2"></i>Leeme...
+      </h2>
+      <!-- Botón para mostrar/ocultar la descripción detallada -->
+      <button onclick="toggleDescripcionWithAnimation()">
+        <span id="chevron-arrow"><i class="bx bx-chevron-down"></i></span>
+      </button>
+      <div class="leeme">
+        <p>Abre el icono de la hamburguesa!</p>
+      </div>
     </main>
     <footer>
-        <div class="container">
-            <p>Derechos de autor reservados por nadie | 2023</p>
-        </div>
+      <div class="container">
+        <p>Derechos de autor reservados por nadie | 2023</p>
+      </div>
     </footer>
     <script>
-        // Función para mostrar u ocultar la descripción detallada
-        function toggleDescripcion() {
-            var descripcion = document.querySelector('.descripcion-detallada');
-            if (descripcion.style.display === 'none' || descripcion.style.display === '') {
-                descripcion.style.display = 'block';
-            } else {
-                descripcion.style.display = 'none';
-            }
+      function toggleClass(element, fromClassName, toClassName) {
+        if (element.classList[1] == fromClassName) {
+          element.classList.remove(fromClassName);
+          element.classList.add(toClassName);
+        } else {
+          element.classList.remove(toClassName);
+          element.classList.add(fromClassName);
         }
-        function toggleDescripcion() {
-            var descripcion = document.querySelector('.leeme');
-            if (descripcion.style.display === 'none2' || descripcion.style.display === '') {
-                descripcion.style.display = 'block2';
-            } else {
-                descripcion.style.display = 'none2';
-            }
-        }
+      }
 
-        function toggleClass(element, fromClassName, toClassName) {
-            if (element.classList[1] == fromClassName) {
-                element.classList.remove(fromClassName)
-                element.classList.add(toClassName)
-            }
-            else {
-                element.classList.remove(toClassName)
-                element.classList.add(fromClassName)
-            }
-        }
+      const icon = document.getElementById("icon-hx");
+      let counter = 0;
+      icon.addEventListener("click", (e) => {
+        const element = e.target;
+        if (counter >= 1) toggleClass(element, "bx-menu", "bx-x");
+        else counter++;
+      });
 
-        const icon = document.getElementById('icon-hx');
-        let counter = 0;
-        icon.addEventListener('click', e => {
-            const element = e.target
-            if (counter >= 1) toggleClass(element, 'bx-menu', 'bx-x')
-            else counter++
-        });
-
-        const chevronArrow = document.getElementById('chevron-arrow');
-        chevronArrow.addEventListener('click', e => {
-            const element = e.target
-            toggleClass(element, 'bx-chevron-down', 'bx-chevron-up')
-        });
+      const chevronArrow = document.getElementById("chevron-arrow");
+      chevronArrow.addEventListener("click", (e) => {
+        const element = e.target;
+        toggleClass(element, "bx-chevron-down", "bx-chevron-up");
+      });
     </script>
-</body>
-
+  </body>
 </html>

@@ -1,252 +1,263 @@
 /* Estilos generales */
 body {
-    font-family: 'fonts/0FlJVP6Hrxmt7-fsUFhlFXNIlpcSwSrkTA-v.woff2';
-    /*Arial, sans-serif;*/
-    background: linear-gradient(90deg, rgba(30, 36, 0, 1) 0%, rgba(181, 6, 64, 1) 35%, rgba(0, 212, 255, 1) 100%);
-    color: #fff;
-    margin: 0;
-    padding: 0;
+  font-family: "fonts/0FlJVP6Hrxmt7-fsUFhlFXNIlpcSwSrkTA-v.woff2";
+  /*Arial, sans-serif;*/
+  background: linear-gradient(
+    90deg,
+    rgba(30, 36, 0, 1) 0%,
+    rgba(181, 6, 64, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Encabezado */
 header {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 header h1 {
-    font-size: 36px;
-    margin: 0;
-    color: #fff;
-    text-align: center;
+  font-size: 36px;
+  margin: 0;
+  color: #fff;
+  text-align: center;
 }
 
 /* Barra de navegación */
 nav {
-    text-align: center;
-    padding: 10px 0;
+  text-align: center;
+  padding: 10px 0;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 /* Contenido principal */
 .main-content {
-    padding: 20px;
+  padding: 20px;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
 }
 
 /* Sección de juegos */
 .games-section {
-    padding: 20px;
+  padding: 20px;
 }
 
 .games-section h2 {
-    color: #fff;
+  color: #fff;
 }
 
 /* Pie de página */
 footer {
-    text-align: center;
-    padding: 10px 0;
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
 }
 
 footer .container {
-    position: relative; 
-    left: -55.55%; 
-    width: 100%;
-}	
+  position: relative;
+  left: -55.55%;
+  width: 100%;
+}
+
+footer .container p:hover {
+  text-decoration: underline;
+  user-select: none;
+}
 
 /* Estilo para el menú de navegación */
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #fff;
-    /* Color del texto de los enlaces */
-    font-weight: bold;
-    /* Texto en negrita */
-    padding: 10px 20px;
-    /* Espacio alrededor del texto del enlace */
+  text-decoration: none;
+  /* Color del texto de los enlaces */
+  color: #fff;
+  /* Texto en negrita */
+  font-weight: bold;
+  /* Espacio alrededor del texto del enlace */
+  padding: 10px 20px;
 }
 
 nav a:hover {
-    background-color: #681a34;
-    /* Color de fondo al pasar el mouse por encima */
-    color: #fff;
-    /* Cambio de color del texto al pasar el mouse por encima */
-    border-radius: 5px;
-    /* Bordes redondeados al pasar el mouse por encima */
+  /* Color de fondo al pasar el mouse por encima */
+  background-color: #681a34;
+  /* Cambio de color del texto al pasar el mouse por encima */
+  color: #fff;
+  /* Bordes redondeados al pasar el mouse por encima */
+  border-radius: 5px;
 }
 
 /* MISMO CODIGO DE ANIMACION (Me da paja crear otro xd) */
 .uix_navigationLogoText2 {
-    font-size: 24px;
-    /* Tamaño de fuente */
-    color: #fff;
-    /* Color del texto */
-    border: 2px solid #ac0000;
-    padding: 10px 20px;
-    /* Espacio alrededor del texto */
-    background-color: #d51414;
-    /* Borde sólido */
-    border-radius: 5px;
-    /* Bordes redondeados */
-    display: inline-flex;
-    /* Mostrar en línea con ícono */
-    align-items: center;
-    /* Alinear elementos verticalmente */
+  /* Tamaño de fuente */
+  font-size: 24px;
+  /* Color del texto */
+  color: #fff;
+  border: 2px solid #ac0000;
+  /* Espacio alrededor del texto */
+  padding: 10px 20px;
+  /* Borde sólido */
+  background-color: #d51414;
+  /* Bordes redondeados */
+  border-radius: 5px;
+  /* Mostrar en línea con ícono */
+  display: inline-flex;
+  /* Alinear elementos verticalmente */
+  align-items: center;
+  user-select: none;
 }
 
 .uix_icon.fa-gamepad2 {
-    font-size: 28px;
-    /* Tamaño del ícono */
-    margin-right: 10px;
-    /* Espacio entre el ícono y el texto */
+  /* Tamaño del ícono */
+  font-size: 28px;
+  /* Espacio entre el ícono y el texto */
+  margin-right: 10px;
 }
 
 /* Define la animación de desvanecimiento */
 @keyframes fade {
-    from {
-        opacity: 0;
-        /* Inicia con opacidad 0 (oculto) */
-    }
+  from {
+    /* Inicia con opacidad 0 (oculto) */
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-        /* Termina con opacidad 1 (visible) */
-    }
+  to {
+    /* Termina con opacidad 1 (visible) */
+    opacity: 1;
+  }
 }
 
 /* a */
 .leeme {
-    display: none;
+  display: none;
 }
 
 /* A */
 .leeme.mostrar {
-    animation: fade 0.5s ease-in-out;
-    /* Duración de la animación y suavidad */
-    display: block;
+  /* Duración de la animación y suavidad */
+  animation: fade 0.5s ease-in-out;
+  display: block;
 }
 
 /* Estilo para el icono de menú */
 .menu-icon {
-    position: fixed;
-    left: 20px;
-    /* Ajusta la posición según tus preferencias */
-    top: 20px;
-    /* Ajusta la posición según tus preferencias */
-    cursor: pointer;
-    font-size: 24px;
-    /* Tamaño del icono */
-    color: #fff;
-    /* Color del icono */
+  position: fixed;
+  /* Ajusta la posición según tus preferencias */
+  left: 20px;
+  /* Ajusta la posición según tus preferencias */
+  top: 20px;
+  cursor: pointer;
+  /* Tamaño del icono */
+  font-size: 24px;
+  /* Color del icono */
+  color: #fff;
 }
 
 /* Estilo para el botón de las tres rayitas */
 .menu-button {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
-    font-size: 24px;
-    color: #fff;
-    z-index: 1000;
-    /* Asegura que esté en la parte superior */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+  z-index: 1000;
+  /* Asegura que esté en la parte superior */
 }
 
 /* Estilo para el botón de las tres rayitas */
 .menu-button {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
-    font-size: 24px;
-    color: #fff;
-    z-index: 1000;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+  z-index: 1000;
 }
 
 .menu-button .bx-menu,
 .menu-button .bx-x {
-    font-size: 34px;
+  font-size: 34px;
 }
 
 .bx-chevron-down,
 .bx-chevron-up {
-    font-size: 24px;
-    font-weight: 700;
-    cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 /* Estilo para el menú oculto */
 .hidden-menu {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #333;
-    z-index: 999;
-    transition: left 0.3s ease-in-out;
-    padding-top: 60px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  z-index: 999;
+  transition: left 0.3s ease-in-out;
+  padding-top: 60px;
 }
 
 /* Estilo para los elementos del menú */
 .hidden-menu ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .hidden-menu li {
-    padding: 10px;
+  padding: 10px;
 }
 
 .hidden-menu a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    display: block;
-    /* Hace que los elementos sean bloques para mostrarlos uno encima del otro */
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  /* Hace que los elementos sean bloques para mostrarlos uno encima del otro */
+  display: block;
 }
