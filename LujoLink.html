@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="es-AR"></html>
+<html lang="es-AR">
+
+</html>
 <html>
+
 <head>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="styles.js"></script>
@@ -21,7 +24,8 @@
             font-weight: bold;
             font-size: 15px;
             color: rgb(66, 66, 66);
-            text-decoration: none;  /* XD */
+            text-decoration: none;
+            /* XD */
             background-color: rgb(0, 0, 0);
             padding: 12px 15px;
             margin: 0 auto;
@@ -41,29 +45,13 @@
     </style>
     <script src="juego.js"></script>
 </head>
+
 <body>
     <header>
         <h1>LujoLink Studio (alpha beta 0.0.1)</h1>
         <h1>""</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Foro</a></li>
-                <li><a href="#">Ayuda</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Términos y Condiciones</a></li>
-                <li><a href="#">???</a></li>
-            </ul>
-        </nav>
-        <div class="menu-button" onclick="toggleMenu()"> <!-- 3 rayas menú xd-->
-            <div class="menu-icon">
-                <img src="assets/images/icons/menu_icon.png"/>
-        </div>
-        <div class="home-icon">
-            <img src="assets/images/icons/home_icon.png"/>
-        </div>
-        <div class="share-icon">
-            <img src="assets/images/icons/share_icon.png"/>
+        <div class="menu-button" onclick="toggleMenu()"> <!-- menú hamburguesa -->
+            <span id="icon-hx"><i class="bx bx-menu"></i></span>
         </div>
     </header>
     <!-- Menú oculto -->
@@ -79,15 +67,20 @@
         </ul>
     </nav>
     <main>
-        <h2 class="uix_navigationLogoText2"><i class="uix_icon fa fa-gamepad2"></i>Leeme...</h2> <!-- <h2>¡Leeme porfavor!</h2> -->
+        <h2 class="uix_navigationLogoText2"><i class="uix_icon fa fa-gamepad2"></i>Leeme...</h2>
+        <!-- <h2>¡Leeme porfavor!</h2> -->
         <!-- Botón para mostrar/ocultar la descripción detallada -->
-        <button onclick="toggleDescripcionWithAnimation()">↴</button> <!-- <button onclick="toggleDescripcion()">ASDAS</button> -->
+        <button onclick="toggleDescripcionWithAnimation()"><span id="chevron-arrow"><i
+                    class='bx bx-chevron-down'></i></span></button>
+        <!-- <button onclick="toggleDescripcion()">ASDAS</button> -->
         <div class="leeme">
-        <p>asd</p>
-        <p>pito!</p>
-    </main> 
+            <p>Abre el icono de la hamburguesa!</p>
+        </div>
+    </main>
     <footer>
-        <p>Derechos de autor reservados por nadie | 2023</p>
+        <div class="container">
+            <p>Derechos de autor reservados por nadie | 2023</p>
+        </div>
     </footer>
     <script>
         // Función para mostrar u ocultar la descripción detallada
@@ -107,6 +100,32 @@
                 descripcion.style.display = 'none2';
             }
         }
+
+        function toggleClass(element, fromClassName, toClassName) {
+            if (element.classList[1] == fromClassName) {
+                element.classList.remove(fromClassName)
+                element.classList.add(toClassName)
+            }
+            else {
+                element.classList.remove(toClassName)
+                element.classList.add(fromClassName)
+            }
+        }
+
+        const icon = document.getElementById('icon-hx');
+        let counter = 0;
+        icon.addEventListener('click', e => {
+            const element = e.target
+            if (counter >= 1) toggleClass(element, 'bx-menu', 'bx-x')
+            else counter++
+        });
+
+        const chevronArrow = document.getElementById('chevron-arrow');
+        chevronArrow.addEventListener('click', e => {
+            const element = e.target
+            toggleClass(element, 'bx-chevron-down', 'bx-chevron-up')
+        });
     </script>
 </body>
+
 </html>

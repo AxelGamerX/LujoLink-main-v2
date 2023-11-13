@@ -1,7 +1,8 @@
 /* Estilos generales */
 body {
-    font-family: 'fonts/0FlJVP6Hrxmt7-fsUFhlFXNIlpcSwSrkTA-v.woff2'; /*Arial, sans-serif;*/
-    background: linear-gradient(90deg, rgba(30,36,0,1) 0%, rgba(181,6,64,1) 35%, rgba(0,212,255,1) 100%);
+    font-family: 'fonts/0FlJVP6Hrxmt7-fsUFhlFXNIlpcSwSrkTA-v.woff2';
+    /*Arial, sans-serif;*/
+    background: linear-gradient(90deg, rgba(30, 36, 0, 1) 0%, rgba(181, 6, 64, 1) 35%, rgba(0, 212, 255, 1) 100%);
     color: #fff;
     margin: 0;
     padding: 0;
@@ -54,6 +55,15 @@ nav a {
     padding: 20px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+}
+
 /* Sección de juegos */
 .games-section {
     padding: 20px;
@@ -68,7 +78,16 @@ footer {
     text-align: center;
     padding: 10px 0;
     color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
 }
+
+footer .container {
+    position: relative; 
+    left: -55.55%; 
+    width: 100%;
+}	
 
 /* Estilo para el menú de navegación */
 nav ul {
@@ -84,40 +103,59 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff; /* Color del texto de los enlaces */
-    font-weight: bold; /* Texto en negrita */
-    padding: 10px 20px; /* Espacio alrededor del texto del enlace */
+    color: #fff;
+    /* Color del texto de los enlaces */
+    font-weight: bold;
+    /* Texto en negrita */
+    padding: 10px 20px;
+    /* Espacio alrededor del texto del enlace */
 }
 
 nav a:hover {
-    background-color: #681a34; /* Color de fondo al pasar el mouse por encima */
-    color: #fff; /* Cambio de color del texto al pasar el mouse por encima */
-    border-radius: 5px; /* Bordes redondeados al pasar el mouse por encima */
+    background-color: #681a34;
+    /* Color de fondo al pasar el mouse por encima */
+    color: #fff;
+    /* Cambio de color del texto al pasar el mouse por encima */
+    border-radius: 5px;
+    /* Bordes redondeados al pasar el mouse por encima */
 }
 
 /* MISMO CODIGO DE ANIMACION (Me da paja crear otro xd) */
 .uix_navigationLogoText2 {
-    font-size: 24px; /* Tamaño de fuente */
-    color: #000000; /* Color del texto */
-    padding: 10px 20px; /* Espacio alrededor del texto */
-    border: 2px solid #f30505; /* Borde sólido */
-    border-radius: 5px; /* Bordes redondeados */
-    display: inline-flex; /* Mostrar en línea con ícono */
-    align-items: center; /* Alinear elementos verticalmente */
+    font-size: 24px;
+    /* Tamaño de fuente */
+    color: #fff;
+    /* Color del texto */
+    border: 2px solid #ac0000;
+    padding: 10px 20px;
+    /* Espacio alrededor del texto */
+    background-color: #d51414;
+    /* Borde sólido */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    display: inline-flex;
+    /* Mostrar en línea con ícono */
+    align-items: center;
+    /* Alinear elementos verticalmente */
 }
 
 .uix_icon.fa-gamepad2 {
-    font-size: 28px; /* Tamaño del ícono */
-    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    font-size: 28px;
+    /* Tamaño del ícono */
+    margin-right: 10px;
+    /* Espacio entre el ícono y el texto */
 }
 
 /* Define la animación de desvanecimiento */
 @keyframes fade {
     from {
-        opacity: 0; /* Inicia con opacidad 0 (oculto) */
+        opacity: 0;
+        /* Inicia con opacidad 0 (oculto) */
     }
+
     to {
-        opacity: 1; /* Termina con opacidad 1 (visible) */
+        opacity: 1;
+        /* Termina con opacidad 1 (visible) */
     }
 }
 
@@ -128,32 +166,23 @@ nav a:hover {
 
 /* A */
 .leeme.mostrar {
-    animation: fade 0.5s ease-in-out; /* Duración de la animación y suavidad */
+    animation: fade 0.5s ease-in-out;
+    /* Duración de la animación y suavidad */
     display: block;
 }
 
 /* Estilo para el icono de menú */
 .menu-icon {
     position: fixed;
-    left: 20px; /* Ajusta la posición según tus preferencias */
-    top: 20px; /* Ajusta la posición según tus preferencias */
+    left: 20px;
+    /* Ajusta la posición según tus preferencias */
+    top: 20px;
+    /* Ajusta la posición según tus preferencias */
     cursor: pointer;
-    font-size: 24px; /* Tamaño del icono */
-    color: #fff; /* Color del icono */
-}
-
-/* Estilo para el ícono de (Home) */
-.home-icon {
-    position: fixed;
-    right: 20px; /* Ajusta la posición según tus preferencias */
-    top: 20px; /* Ajusta la posición según tus preferencias */
-    cursor: pointer;
-}
-
-/* Estilo para la imagen del ícono de casita */
-.home-icon img {
-    width: 24px; /* Ancho de la imagen */
-    height: 24px; /* Altura de la imagen */
+    font-size: 24px;
+    /* Tamaño del icono */
+    color: #fff;
+    /* Color del icono */
 }
 
 /* Estilo para el botón de las tres rayitas */
@@ -164,7 +193,8 @@ nav a:hover {
     cursor: pointer;
     font-size: 24px;
     color: #fff;
-    z-index: 1000; /* Asegura que esté en la parte superior */
+    z-index: 1000;
+    /* Asegura que esté en la parte superior */
 }
 
 /* Estilo para el botón de las tres rayitas */
@@ -178,9 +208,16 @@ nav a:hover {
     z-index: 1000;
 }
 
-.menu-icon img {
-    width: 24px; /* Ancho de la imagen */
-    height: 24px; /* Altura de la imagen */
+.menu-button .bx-menu,
+.menu-button .bx-x {
+    font-size: 34px;
+}
+
+.bx-chevron-down,
+.bx-chevron-up {
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 /* Estilo para el menú oculto */
@@ -193,18 +230,7 @@ nav a:hover {
     background-color: #333;
     z-index: 999;
     transition: left 0.3s ease-in-out;
-}
-
-/* Estilo para el menú oculto */
-.hidden-menu {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #333;
-    z-index: 999;
-    transition: left 0.3s ease-in-out;
+    padding-top: 60px;
 }
 
 /* Estilo para los elementos del menú */
@@ -221,21 +247,6 @@ nav a:hover {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
-    display: block; /* Hace que los elementos sean bloques para mostrarlos uno encima del otro */
-}
-
-/* Estilo para el ícono de Compartir */
-.share-icon {
-    position: fixed;
-    right: 20px; /* Ajusta la posición según tus preferencias */
-    top: 20px; /* Ajusta la posición según tus preferencias */
-    cursor: pointer;
-    left: 1275px;
-    width: 200px;
-}
-
-/* Estilo para la imagen del ícono Compartir */
-.share-icon img {
-    width: 24px; /* Ancho de la imagen */
-    height: 24px; /* Altura de la imagen */
+    display: block;
+    /* Hace que los elementos sean bloques para mostrarlos uno encima del otro */
 }
